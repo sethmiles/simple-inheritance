@@ -1,34 +1,34 @@
 
-// Director = function(){
+Director = function(){
 
-// 	var Director = Class(_.extend(Person, {
+	var Director = Class(_.extend(Person, {
 
-// 		title: '',
+		title: '',
 
-// 		officeNumber: '',
+		officeNumber: '',
 		
-// 		initialize: function () {
-// 			console.log('Initializing Director...');
-// 		},
+		initialize: function () {
+			console.log('Initializing Director...');
+		},
 
-// 		getTitle: function () {
-// 			return this.title;
-// 		},
+		getTitle: function () {
+			return this.title;
+		},
 
-// 		setTitle: function (title) {
-// 			this.title = title;
-// 		},
+		setTitle: function (title) {
+			this.title = title;
+		},
 
-// 		getOfficeNumber: function () {
-// 			return this.officeNumber;
-// 		},
+		getOfficeNumber: function () {
+			return this.officeNumber;
+		},
 
-// 		setOfficeNumber: function (officeNumber) {
-// 			this.officeNumber = officeNumber;
-// 		} 
+		setOfficeNumber: function (officeNumber) {
+			this.officeNumber = officeNumber;
+		} 
 
-// 	}));
+	}));
 
-// 	return Director;
+	return Director;
 
-// };
+};

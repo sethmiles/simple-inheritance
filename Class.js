@@ -21,16 +21,16 @@ Class = function () {
 
 var extend = Class.extend = function (klass, arg) {
   var hash = arg,
-      buildProto = function (mysuper, arg) {
-        mysuper = arg;
+      buildProto = function (arg) {
+        var mysuper = arg;
         mysuper.prototype = arg.prototype;
         mysuper.prototype.constructor = arg;
         return mysuper;
       }
 
   if(typeof(arg) == 'function'){
-    klass.prototype.super = {};
-    klass.prototype.super = buildProto(klass.prototype.super, arg);
+    klass.prototype.super = arg;
+    klass.prototype.super = buildProto(arg);
     hash = arg.prototype;
   }
 

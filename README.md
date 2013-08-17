@@ -74,7 +74,7 @@ GeckoSpecies = function () {
 
 ###Warning
 
-JavaScript was not created to have deep inheritance like classical languages. This simple code imitates that type of inheritance. Checking class inheritance by using `instanceof` is not reliable.
+JavaScript was not created to have deep inheritance like classical languages. This code imitates that type of inheritance. Checking class inheritance by using `instanceof` is not reliable.
 
 ###Comments
 

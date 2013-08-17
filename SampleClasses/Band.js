@@ -1,28 +1,21 @@
+Band = Class({
 
-var Band = function () {
+	bandLevel: '',
 
-	var Band = Class({
+	constructor: function () {
+		console.log('Construction');
+	},
+	
+	initialize: function () {
+		console.log('Initializing Band...');
+	},
 
-		bandLevel: '',
+	getBand: function () {
+		return this.bandLevel;
+	},
 
-		constructor: function () {
-			console.log('Construction');
-		},
-		
-		initialize: function () {
-			console.log('Initializing Band...');
-		},
+	setBand: function (title) {
+		this.bandLevel = title;
+	},
 
-		getBand: function () {
-			return this.bandLevel;
-		},
-
-		setBand: function (title) {
-			this.bandLevel = title;
-		},
-
-	}, Director);
-
-	return Band;
-
-}();
+}, Director);

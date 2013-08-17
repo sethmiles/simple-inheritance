@@ -9,26 +9,21 @@ Class.js is 41 lines of code that takes in a hash of attributes and methods as w
 
 
  ```javascript
- Reptile = function () {
+Reptile = Class({
 
-	var Reptile = Class({
+	initialize: function () {
+		console.log('Creating a reptile');
+	},
 
-		initialize: function () {
-			console.log('Creating a reptile');
-		},
+	setSkinColor: function (color) {
+		this.skinColor = color;
+	},
 
-		setSkinColor: function (color) {
-			this.skinColor = color;
-		}
+	getSkinColor: function () {
+		return this.skinColor;
+	}
 
-		getSkinColor: function () {
-			return this.skinColor;
-		}
-	});
-
-	return Reptile
-
-}();
+});
  ```
 
  This has now created the class Reptile to the window. Typing `Reptile` into the command line would return the constructor. `Reptile.prototype` shows all methods shown above.
@@ -36,27 +31,21 @@ Class.js is 41 lines of code that takes in a hash of attributes and methods as w
 ###Extending a Class
 
 ```javascript
-Gecko = function () {
+Gecko = Class({
 
- 	var Gecko = Class({
+	initialize: function () {
+		console.log('Creating a Gecko');
+	},
 
- 		initialize: function () {
- 			console.log('Creating a Gecko');
- 		}
+	setLength: function (length) {
+		this.length = length;
+	},
 
- 		setLength: function (length) {
- 			this.length = length;
- 		}
+	getLength: function () {
+		return this.length;
+	}
 
- 		getLength: function () {
- 			return this.length;
- 		}
-
- 	}, Reptile);
-
- 	return Gecko;
-
-}();
+}, Reptile);
 ```
 
 There are now Gecko and Reptile classes on the window. `myGecko = new Gecko()` will return a new Gecko. `myGecko.super` returns the constructor for the super class (Reptile) and `myGecko.super.prototype` are all the parent methods.
@@ -66,10 +55,7 @@ There are now Gecko and Reptile classes on the window. `myGecko = new Gecko()` w
 To continue extending more than one class, follow the pattern above and only pass in the class which is being extended. A chain is formed and the super methods are appended to each class as it's being created. Modifying any method on the prototype chain will alter it for all classes. For example, the code to extend Gecko again is shown below.
 
 ```javascript
-GeckoSpecies = function () {
-	var GeckoSpecies = Class({}, Gecko);
-	return GeckoSpecies;
-}();
+GeckoSpecies = Class({}, Gecko);
 ```
 
 ###Warning

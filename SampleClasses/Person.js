@@ -1,70 +1,63 @@
+Person = Class({
 
-var Person = function () {
+	fname: '',
 
-	var Person = Class({
+	lname: '',
 
-		fname: '',
+	age: 0,
 
-		lname: '',
+	gender: '',
 
-		age: 0,
+	constructor: function () {
 
-		gender: '',
+	},
 
-		constructor: function () {
+	initialize: function () {
+		console.log('Initializing Person...');
+	},
 
-		},
+	getFullName: function () {
+		return this.fname + ' ' + this.lname;
+	},
 
-		initialize: function () {
-			console.log('Initializing Person...');
-		},
+	isAnAdult: function () {
+		return (age >= 18);
+	},
 
-		getFullName: function () {
-			return this.fname + ' ' + this.lname;
-		},
+	isMan: function () {
+		return (gender.toLowerCase() == 'male');
+	},
 
-		isAnAdult: function () {
-			return (age >= 18);
-		},
+	setfName: function (name){
+		this.fname = name;
+	},
 
-		isMan: function () {
-			return (gender.toLowerCase() == 'male');
-		},
+	getfName: function () {
+		return this.fname;
+	},
 
-		setfName: function (name){
-			this.fname = name;
-		},
+	setlname: function (name){
+		this.lname = name;
+	},
 
-		getfName: function () {
-			return this.fname;
-		},
+	getlname: function () {
+		return this.lname;
+	},
 
-		setlname: function (name){
-			this.lname = name;
-		},
+	setAge: function (age) {
+		this.age = age;
+	},
 
-		getlname: function () {
-			return this.lname;
-		},
+	getAge: function () {
+		return this.age
+	},
 
-		setAge: function (age) {
-			this.age = age;
-		},
+	setGender: function (gender){
+		this.gender = gender;
+	},
 
-		getAge: function () {
-			return this.age
-		},
+	getGender: function () {
+		return gender;
+	}
 
-		setGender: function (gender){
-			this.gender = gender;
-		},
-
-		getGender: function () {
-			return gender;
-		}
-
-	});
-
-	return Person;
-
-}()
+});

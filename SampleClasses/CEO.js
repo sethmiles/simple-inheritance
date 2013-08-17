@@ -1,24 +1,17 @@
+CEO = Class({
 
-var CEO = function () {
+	area: '',
 
-	var CEO = Class({
+	constructor: function () {
 
-		area: '',
+	},
 
-		constructor: function () {
+	initialize: function () {
+		console.log('Initializing CEO...');
+	},
 
-		},
+	setCEOArea: function (area) {
+		this.area = area;
+	}
 
-		initialize: function () {
-			console.log('Initializing CEO...');
-		},
-
-		setCEOArea: function (area) {
-			this.area = area;
-		}
-
-	}, Band);
-
-	return CEO;
-
-}();
+}, Band);

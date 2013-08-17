@@ -1,15 +1,18 @@
 
-Person = function(){
+var Person = function () {
 
-	 var Person = Class({
+	var Person = Class({
 
 		fname: '',
+
 		lname: '',
+
 		age: 0,
+
 		gender: '',
 
 		constructor: function () {
-			
+
 		},
 
 		initialize: function () {
@@ -64,4 +67,4 @@ Person = function(){
 
 	return Person;
 
-}();
+}()

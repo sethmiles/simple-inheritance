@@ -1,11 +1,15 @@
 
-Director = function(){
+var Director = function () {
 
-	var Director = Class(_.extend(Person, {
+	var Director = Class({
 
 		title: '',
 
 		officeNumber: '',
+
+		constructor: function () {
+			console.log('Construction');
+		},
 		
 		initialize: function () {
 			console.log('Initializing Director...');
@@ -25,10 +29,10 @@ Director = function(){
 
 		setOfficeNumber: function (officeNumber) {
 			this.officeNumber = officeNumber;
-		} 
+		}
 
-	}));
+	}, Person);
 
 	return Director;
 
-};
+}();

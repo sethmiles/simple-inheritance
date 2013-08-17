@@ -33,7 +33,7 @@ Class.js is 45 lines of code that takes in a hash of attributes and methods as w
 
  This has now created the class Reptile to the window. Typing `Reptile` into the command line would return the constructor. `Reptile.prototype` shows all methods shown above.
 
- #Extending a Class
+ ###Extending a Class
 
 ```javascript
 Gecko = function () {

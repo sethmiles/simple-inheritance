@@ -63,7 +63,7 @@ There are now Gecko and Reptile classes on the window. `myGecko = new Gecko()` w
 
 ###Extending Multiple Classes
 
-To extend more than one class, follow the pattern above and only pass in the class which is being extended. A chain is formed and the super methods are appended to each class as it's being created. Modifying any method on the prototype chain will alter it for all classes. For example, the code to extend Gecko again is shown below.
+To continue extending more than one class, follow the pattern above and only pass in the class which is being extended. A chain is formed and the super methods are appended to each class as it's being created. Modifying any method on the prototype chain will alter it for all classes. For example, the code to extend Gecko again is shown below.
 
 ```javascript
 GeckoSpecies = function () {

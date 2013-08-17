@@ -1,7 +1,7 @@
 Simple-Inheritance
 ==================
 
-Simple methods for writing extensible JavaScript classes.
+Class.js is a simple method for writing fully extensible JavaScript classes.
 
 #How It Works
 

@@ -5,7 +5,7 @@ Class.js is a simple method for writing fully extensible JavaScript classes.
 
 #How It Works
 
-Class.js is 45 lines of code that takes in a hash of attributes and methods as well as the class that is being extended. Below is a sample of how to create a class using Class.js.
+Class.js is 41 lines of code that takes in a hash of attributes and methods as well as the class that is being extended, if any. Below is a sample of how to create a class using Class.js.
 
 
  ```javascript
